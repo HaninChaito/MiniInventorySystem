@@ -1,0 +1,92 @@
+.admin-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-title {
+  text-align: center;
+  color: #6C757D;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.error-msg {
+  color: #dc3545;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-form input,
+.product-form button {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  flex: 1;
+}
+
+.product-form button {
+  background-color: #6C757D;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-form button:hover {
+  background-color: #084298;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.product-table button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-table button:first-child {
+  background-color:#6C757D ;
+  color: #fff;
+}
+
+.product-table button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}

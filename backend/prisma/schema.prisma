@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id        Int      @id @default(autoincrement())
+  name      String
+  description String?
+  category  String
+  price     Float
+  quantity  Int
+  inStock   Boolean
+  createdAt DateTime @default(now())
+  embedding Unsupported("vector(1024)")?
+  name_in_arabic        String? @map("name_in_arabic")
+  description_in_arabic String? @map("description_in_arabic")
+
+  @@map("item")
+}
